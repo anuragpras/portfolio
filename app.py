@@ -32,7 +32,6 @@ def main():
         st.markdown('[COVID-19 Tableau Dashboard](https://github.com/anuragpras/covid19-tableau)')
         st.markdown('Analyzing COVID-19 data using Tableau')
 
-    # Second block of repositories
     with col2:
         st.subheader('Exploratory Data Analysis')
         st.markdown('[Exploratory Data Analysis](https://github.com/anuragpras/exploratory-data-analysis)')
@@ -56,17 +55,31 @@ def main():
 
     # Contact section
     st.header('Contact')
-    st.markdown('**Gmail**')
-    st.image('assets/gmail-icon.png', width=30)
-    st.markdown('[ianuragprasad@gmail.com](mailto:ianuragprasad@gmail.com)')
-    st.image('assets/gmail-icon.png', width=30)
-    st.markdown('[anurag.prasad@vitbhopal.ac.in](mailto:anurag.prasad@vitbhopal.ac.in)')
-    st.markdown('**LinkedIn**')
-    st.image('assets/linkedin-icon.png', width=30)
-    st.markdown('[LinkedIn](https://www.linkedin.com/in/anuragpras)')
-    st.markdown('**GitHub**')
-    st.image('assets/github-icon.png', width=30)
-    st.markdown('[GitHub](https://github.com/anuragpras)')
+
+    # Align logos and text in a block
+    col1, col2, col3 = st.columns([1, 1, 2])  # Adjust column widths as needed
+
+    with col1:
+        st.image('assets/gmail-icon.png', width=30)
+    with col2:
+        st.markdown('[ianuragprasad@gmail.com](mailto:ianuragprasad@gmail.com)')
+    with col3:
+        st.image('assets/gmail-icon.png', width=30)
+        st.markdown('[anurag.prasad@vitbhopal.ac.in](mailto:anurag.prasad@vitbhopal.ac.in)')
+
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        st.image('assets/linkedin-icon.png', width=30)
+    with col2:
+        st.markdown('[LinkedIn](https://www.linkedin.com/in/anuragpras)')
+
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        st.image('assets/github-icon.png', width=30)
+    with col2:
+        st.markdown('[GitHub](https://github.com/anuragpras)')
 
     # Footer
     st.markdown('---')

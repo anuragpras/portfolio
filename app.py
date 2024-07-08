@@ -60,18 +60,20 @@ def main():
     # Contact section
     st.header('Contact')
 
-    # Contact information with hyperlinks and horizontal lines
-    st.markdown('[ianuragprasad@gmail.com](mailto:ianuragprasad@gmail.com)', unsafe_allow_html=True)
-    st.markdown('---')  # Horizontal line after the contact info
+    # Contact information with styled hyperlinks and aligned horizontally
+    st.markdown('<style> a { text-decoration: none; color: #333333; } </style>', unsafe_allow_html=True)
 
-    st.markdown('[anurag.prasad@vitbhopal.ac.in](mailto:anurag.prasad@vitbhopal.ac.in)', unsafe_allow_html=True)
-    st.markdown('---')  # Horizontal line after the contact info
+    st.markdown('<div style="display: flex; flex-direction: row;">', unsafe_allow_html=True)
 
-    st.markdown('[LinkedIn](https://www.linkedin.com/in/anuragpras)', unsafe_allow_html=True)
-    st.markdown('---')  # Horizontal line after the contact info
+    st.markdown('<div style="flex: 1;">Personal Mail ID:<br><a href="mailto:ianuragprasad@gmail.com">ianuragprasad@gmail.com</a></div>', unsafe_allow_html=True)
 
-    st.markdown('[GitHub](https://github.com/anuragpras)', unsafe_allow_html=True)
-    st.markdown('---')  # Horizontal line after the contact info
+    st.markdown('<div style="flex: 1;">University Mail ID:<br><a href="mailto:anurag.prasad@vitbhopal.ac.in">anurag.prasad@vitbhopal.ac.in</a></div>', unsafe_allow_html=True)
+
+    st.markdown('<div style="flex: 1;">LinkedIn:<br><a href="https://www.linkedin.com/in/anuragpras">LinkedIn</a></div>', unsafe_allow_html=True)
+
+    st.markdown('<div style="flex: 1;">GitHub:<br><a href="https://github.com/anuragpras">GitHub</a></div>', unsafe_allow_html=True)
+
+    st.markdown('</div>', unsafe_allow_html=True)
 
     # Footer
     st.markdown('---')

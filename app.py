@@ -10,29 +10,46 @@ def main():
 
     # Projects section
     st.header('Projects')
-    st.markdown('### GitHub Pinned Repositories')
-    repos = [
-        {
-            "name": "Repo 1",
-            "html_url": "https://github.com/anuragpras/repo1",
-            "description": "Description for Repo 1"
-        },
-        {
-            "name": "Repo 2",
-            "html_url": "https://github.com/anuragpras/repo2",
-            "description": "Description for Repo 2"
-        }
-        # Add more repositories as needed
-    ]
 
-    for repo in repos:
-        st.markdown(f"[{repo['name']}]({repo['html_url']}) - {repo['description']}")
+    # Two columns layout for projects
+    col1, col2 = st.beta_columns(2)
+
+    # First block of repositories
+    with col1:
+        st.subheader('Image Caption Generator')
+        st.markdown('[Image Caption Generator](https://github.com/anuragpras/image-description-deep-learning)')
+        st.markdown('Image Caption Generator using Flickr dataset')
+
+        st.subheader('Cafe Sales Analysis')
+        st.markdown('[Cafe Sales Analysis](https://github.com/anuragpras/cafe-sales-analysis)')
+        st.markdown('Detailed cafe sales analysis using Power BI and MySQL')
+
+        st.subheader('Amazon India Sales Dashboard')
+        st.markdown('[Amazon India Sales Dashboard](https://github.com/anuragpras/amazon-india-sales-dashboard-tableau)')
+        st.markdown('Interactive Tableau dashboard analyzing Amazon India\'s sales data')
+
+    # Second block of repositories
+    with col2:
+        st.subheader('Exploratory Data Analysis')
+        st.markdown('[Exploratory Data Analysis](https://github.com/anuragpras/exploratory-data-analysis)')
+        st.markdown('E-Commerce Sales Insights using Python')
+
+        st.subheader('Pizza Sales Analysis')
+        st.markdown('[Pizza Sales Analysis](https://github.com/anuragpras/pizza-sales-analysis)')
+        st.markdown('Analyzing pizza sales data using MySQL and Excel')
+
+        st.subheader('Random Poetry Generator')
+        st.markdown('[Random Poetry Generator](https://github.com/anuragpras/not-by-gulzar)')
+        st.markdown('Capture Gulzar\'s essence with playful verses')
+
+    # Additional repositories or customization can be added here
 
     # Contact section
     st.header('Contact')
     st.markdown('**Gmail**')
     st.image('assets/gmail-icon.png', width=30)
     st.markdown('[ianuragprasad@gmail.com](mailto:ianuragprasad@gmail.com)')
+    st.image('assets/gmail-icon.png', width=30)
     st.markdown('[anurag.prasad@vitbhopal.ac.in](mailto:anurag.prasad@vitbhopal.ac.in)')
     st.markdown('**LinkedIn**')
     st.image('assets/linkedin-icon.png', width=30)

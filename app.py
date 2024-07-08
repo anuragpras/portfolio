@@ -33,15 +33,15 @@ def main():
     # Contact section
     st.header('Contact')
     st.markdown('**Gmail**')
-    st.image('assets/gmail_icon.png', width=30)
+    st.image('assets/gmail-icon.png', width=30)
     st.markdown('[ianuragprasad@gmail.com](mailto:ianuragprasad@gmail.com)')
-    st.image('assets/gmail_icon.png', width=30)
+    st.image('assets/gmail-icon.png', width=30)
     st.markdown('[anurag.prasad@vitbhopal.ac.in](mailto:anurag.prasad@vitbhopal.ac.in)')
     st.markdown('**LinkedIn**')
-    st.image('assets/linkedin_icon.png', width=30)
+    st.image('assets/linkedin-icon.png', width=30)
     st.markdown('[LinkedIn](https://www.linkedin.com/your-linkedin-profile)')
     st.markdown('**GitHub**')
-    st.image('assets/github_icon.png', width=30)
+    st.image('assets/github-icon.png', width=30)
     st.markdown('[GitHub](https://github.com/anuragpras)')
 
     # Footer

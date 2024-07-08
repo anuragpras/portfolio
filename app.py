@@ -60,30 +60,18 @@ def main():
     # Contact section
     st.header('Contact')
 
-    # Align logos and text in a block
-    col1, col2, col3 = st.columns([1, 1, 2])  # Adjust column widths as needed
+    # Contact information with hyperlinks and horizontal lines
+    st.markdown('[ianuragprasad@gmail.com](mailto:ianuragprasad@gmail.com)')
+    st.markdown('---')  # Horizontal line after the contact info
 
-    with col1:
-        st.image('assets/gmail-icon.png', width=30)
-    with col2:
-        st.markdown('[ianuragprasad@gmail.com](mailto:ianuragprasad@gmail.com)')
-    with col3:
-        st.image('assets/gmail-icon.png', width=30)
-        st.markdown('[anurag.prasad@vitbhopal.ac.in](mailto:anurag.prasad@vitbhopal.ac.in)')
+    st.markdown('[anurag.prasad@vitbhopal.ac.in](mailto:anurag.prasad@vitbhopal.ac.in)')
+    st.markdown('---')  # Horizontal line after the contact info
 
-    col1, col2 = st.columns([1, 1])
+    st.markdown('[LinkedIn](https://www.linkedin.com/in/anuragpras)')
+    st.markdown('---')  # Horizontal line after the contact info
 
-    with col1:
-        st.image('assets/linkedin-icon.png', width=30)
-    with col2:
-        st.markdown('[LinkedIn](https://www.linkedin.com/in/anuragpras)')
-
-    col1, col2 = st.columns([1, 1])
-
-    with col1:
-        st.image('assets/github-icon.png', width=30)
-    with col2:
-        st.markdown('[GitHub](https://github.com/anuragpras)')
+    st.markdown('[GitHub](https://github.com/anuragpras)')
+    st.markdown('---')  # Horizontal line after the contact info
 
     # Footer
     st.markdown('---')

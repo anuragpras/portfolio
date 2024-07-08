@@ -30,7 +30,7 @@ def main():
     # Project 2 - Cafe Sales Analysis
     st.subheader('Cafe Sales Analysis')
 
-    # Display project details and GIF in a single row
+    # Display project details and placeholder for GIF in a single row
     col1, col2 = st.columns([4, 1])  # Adjust the ratio as needed
 
     # Display project details on the left column
@@ -38,16 +38,16 @@ def main():
         st.markdown('**[cafe-sales-analysis](https://github.com/anuragpras/cafe-sales-analysis)**')
         st.markdown('Detailed cafe sales analysis project using Power BI and MySQL')
 
-    # Display GIF on the right column
+    # Placeholder for GIF on the right column (adjust as needed)
     with col2:
-        st.image('2.gif', use_column_width=True)  # Ensure '2.gif' is in the root folder and the correct filename
+        st.markdown("")  # Leave empty for now if no GIF available
 
     st.markdown('---')  # Horizontal line after the project
 
     # Project 3 - Amazon India Sales Dashboard (Tableau)
     st.subheader('Amazon India Sales Dashboard (Tableau)')
 
-    # Display project details and GIF in a single row
+    # Display project details and placeholder for GIF in a single row
     col1, col2 = st.columns([4, 1])  # Adjust the ratio as needed
 
     # Display project details on the left column
@@ -55,9 +55,9 @@ def main():
         st.markdown('**[amazon-india-sales-dashboard-tableau](https://github.com/anuragpras/amazon-india-sales-dashboard-tableau)**')
         st.markdown('Interactive Tableau dashboard analyzing Amazon India\'s sales data')
 
-    # Display GIF on the right column
+    # Placeholder for GIF on the right column (adjust as needed)
     with col2:
-        st.image('3.gif', use_column_width=True)  # Ensure '3.gif' is in the root folder and the correct filename
+        st.markdown("")  # Leave empty for now if no GIF available
 
     st.markdown('---')  # Horizontal line after the project
 

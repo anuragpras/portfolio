@@ -61,8 +61,6 @@ def main():
 
     st.markdown('---')  # Horizontal line after the project
 
-    # Add more projects similarly...
-
     # Contact section
     st.header('Contact')
 

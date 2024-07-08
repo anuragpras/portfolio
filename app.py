@@ -6,7 +6,7 @@ def main():
 
     # About Me section
     st.header('About Me')
-    st.write('CS Undergrad at VIT Bhopal, open to all technical roles.')
+    st.write('CS Undergrad at VIT Bhopal, Open to technical roles.')
 
     # Projects section
     st.header('Projects')

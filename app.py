@@ -1,6 +1,5 @@
 import streamlit as st
 
-# Main function to render the Streamlit app
 def main():
     st.title('Anurag Prasad - Portfolio')
 
@@ -14,146 +13,91 @@ def main():
     # Project 1 - Image Caption Generator
     st.subheader('Image Caption Generator')
 
-    # Layout for project 1 with GIF on the right
-    col1, col2 = st.beta_columns([1, 3])  # Adjust the ratio as needed
+    # Display GIF and project details in a single row
+    col1, col2 = st.columns([0.2, 4])  # Adjust the ratio as needed
 
-    # Display GIF on the right column
+    # Display GIF on the left column
     with col1:
         st.image('1.gif', use_column_width=True)  # Ensure '1.gif' is in the root folder and the correct filename
 
-    # Display project details on the left column
+    # Display project details on the right column
     with col2:
         st.markdown('[image-description-deep-learning](https://github.com/anuragpras/image-description-deep-learning)', unsafe_allow_html=True)
         st.markdown('Image Caption Generator using Flickr dataset')
-        st.markdown('---')  # Horizontal line after the project
+
+    st.markdown('---')  # Horizontal line after the project
 
     # Project 2 - Cafe Sales Analysis
     st.subheader('Cafe Sales Analysis')
 
-    # Layout for project 2 with GIF on the right
-    col1, col2 = st.beta_columns([1, 3])  # Adjust the ratio as needed
+    # Display project details for the second project
+    st.markdown('[cafe-sales-analysis](https://github.com/anuragpras/cafe-sales-analysis)', unsafe_allow_html=True)
+    st.markdown('Detailed cafe sales analysis project using Power BI and MySQL')
 
-    # Display GIF on the right column
-    with col1:
-        st.image('2.gif', use_column_width=True)  # Ensure '2.gif' is in the root folder and the correct filename
+    st.markdown('---')  # Horizontal line after the project
 
-    # Display project details on the left column
-    with col2:
-        st.markdown('[cafe-sales-analysis](https://github.com/anuragpras/cafe-sales-analysis)', unsafe_allow_html=True)
-        st.markdown('Detailed cafe sales analysis using Power BI and MySQL')
-        st.markdown('---')  # Horizontal line after the project
+    # Project 3 - Amazon India Sales Dashboard (Tableau)
+    st.subheader('Amazon India Sales Dashboard (Tableau)')
 
-    # Project 3 - Amazon India Sales Dashboard
-    st.subheader('Amazon India Sales Dashboard')
+    # Display project details for the third project
+    st.markdown('[amazon-india-sales-dashboard-tableau](https://github.com/anuragpras/amazon-india-sales-dashboard-tableau)', unsafe_allow_html=True)
+    st.markdown('Interactive Tableau dashboard analyzing Amazon India\'s sales data')
 
-    # Layout for project 3 with GIF on the right
-    col1, col2 = st.beta_columns([1, 3])  # Adjust the ratio as needed
+    st.markdown('---')  # Horizontal line after the project
 
-    # Display GIF on the right column
-    with col1:
-        st.image('3.gif', use_column_width=True)  # Ensure '3.gif' is in the root folder and the correct filename
-
-    # Display project details on the left column
-    with col2:
-        st.markdown('[amazon-india-sales-dashboard-tableau](https://github.com/anuragpras/amazon-india-sales-dashboard-tableau)', unsafe_allow_html=True)
-        st.markdown('Interactive Tableau dashboard analyzing Amazon India\'s sales data')
-        st.markdown('---')  # Horizontal line after the project
-
-    # Project 4 - COVID-19 Tableau Dashboard
-    st.subheader('COVID-19 Tableau Dashboard')
-
-    # Layout for project 4 with GIF on the right
-    col1, col2 = st.beta_columns([1, 3])  # Adjust the ratio as needed
-
-    # Display GIF on the right column
-    with col1:
-        st.image('4.gif', use_column_width=True)  # Ensure '4.gif' is in the root folder and the correct filename
-
-    # Display project details on the left column
-    with col2:
-        st.markdown('[covid19-tableau](https://github.com/anuragpras/covid19-tableau)', unsafe_allow_html=True)
-        st.markdown('Analyzing COVID-19 data using Tableau')
-        st.markdown('---')  # Horizontal line after the project
-
-    # Project 5 - Exploratory Data Analysis
+    # Project 4 - Exploratory Data Analysis
     st.subheader('Exploratory Data Analysis')
 
-    # Layout for project 5 with GIF on the right
-    col1, col2 = st.beta_columns([1, 3])  # Adjust the ratio as needed
+    # Display project details for the fourth project
+    st.markdown('[exploratory-data-analysis](https://github.com/anuragpras/exploratory-data-analysis)', unsafe_allow_html=True)
+    st.markdown('E-Commerce Sales Insights: An Exploratory Data Analysis with Python')
 
-    # Display GIF on the right column
-    with col1:
-        st.image('5.gif', use_column_width=True)  # Ensure '5.gif' is in the root folder and the correct filename
+    st.markdown('---')  # Horizontal line after the project
 
-    # Display project details on the left column
-    with col2:
-        st.markdown('[exploratory-data-analysis](https://github.com/anuragpras/exploratory-data-analysis)', unsafe_allow_html=True)
-        st.markdown('E-Commerce Sales Insights using Python')
-        st.markdown('---')  # Horizontal line after the project
-
-    # Project 6 - Pizza Sales Analysis
+    # Project 5 - Pizza Sales Analysis
     st.subheader('Pizza Sales Analysis')
 
-    # Layout for project 6 with GIF on the right
-    col1, col2 = st.beta_columns([1, 3])  # Adjust the ratio as needed
+    # Display project details for the fifth project
+    st.markdown('[pizza-sales-analysis](https://github.com/anuragpras/pizza-sales-analysis)', unsafe_allow_html=True)
+    st.markdown('Analyzing pizza sales data using MySQL and Excel')
 
-    # Display GIF on the right column
-    with col1:
-        st.image('6.gif', use_column_width=True)  # Ensure '6.gif' is in the root folder and the correct filename
+    st.markdown('---')  # Horizontal line after the project
 
-    # Display project details on the left column
-    with col2:
-        st.markdown('[pizza-sales-analysis](https://github.com/anuragpras/pizza-sales-analysis)', unsafe_allow_html=True)
-        st.markdown('Analyzing pizza sales data using MySQL and Excel')
-        st.markdown('---')  # Horizontal line after the project
+    # Project 6 - Not By Gulzar (Random Poetry Generator)
+    st.subheader('Not By Gulzar (Random Poetry Generator)')
 
-    # Project 7 - Random Poetry Generator
-    st.subheader('Random Poetry Generator')
+    # Display project details for the sixth project
+    st.markdown('[not-by-gulzar](https://github.com/anuragpras/not-by-gulzar)', unsafe_allow_html=True)
+    st.markdown('Capture Gulzar\'s essence with the Random Poetry Generator')
 
-    # Layout for project 7 with GIF on the right
-    col1, col2 = st.beta_columns([1, 3])  # Adjust the ratio as needed
+    st.markdown('---')  # Horizontal line after the project
 
-    # Display GIF on the right column
-    with col1:
-        st.image('7.gif', use_column_width=True)  # Ensure '7.gif' is in the root folder and the correct filename
+    # Project 7 - COVID-19 Dashboard (Tableau)
+    st.subheader('COVID-19 Dashboard (Tableau)')
 
-    # Display project details on the left column
-    with col2:
-        st.markdown('[not-by-gulzar](https://github.com/anuragpras/not-by-gulzar)', unsafe_allow_html=True)
-        st.markdown('Capture Gulzar\'s essence with playful verses')
-        st.markdown('---')  # Horizontal line after the project
+    # Display project details for the seventh project
+    st.markdown('[covid19-tableau](https://github.com/anuragpras/covid19-tableau)', unsafe_allow_html=True)
+    st.markdown('Interactive Tableau dashboard tracking COVID-19 statistics')
 
-    # Project 8 - Pomodoro App
-    st.subheader('Pomodoro App')
+    st.markdown('---')  # Horizontal line after the project
 
-    # Layout for project 8 with GIF on the right
-    col1, col2 = st.beta_columns([1, 3])  # Adjust the ratio as needed
+    # Project 8 - Pomodoro Timer App
+    st.subheader('Pomodoro Timer App')
 
-    # Display GIF on the right column
-    with col1:
-        st.image('8.gif', use_column_width=True)  # Ensure '8.gif' is in the root folder and the correct filename
+    # Display project details for the eighth project
+    st.markdown('[pomodoro-app](https://github.com/anuragpras/pomodoro-app)', unsafe_allow_html=True)
+    st.markdown('Productivity tool for time management using Python')
 
-    # Display project details on the left column
-    with col2:
-        st.markdown('[pomodoro-app](https://github.com/anuragpras/pomodoro-app)', unsafe_allow_html=True)
-        st.markdown('Simple Pomodoro timer app')
-        st.markdown('---')  # Horizontal line after the project
+    st.markdown('---')  # Horizontal line after the project
 
     # Project 9 - Snake Game
     st.subheader('Snake Game')
 
-    # Layout for project 9 with GIF on the right
-    col1, col2 = st.beta_columns([1, 3])  # Adjust the ratio as needed
+    # Display project details for the ninth project
+    st.markdown('[snake-game](https://github.com/anuragpras/snake-game)', unsafe_allow_html=True)
+    st.markdown('Classic snake game implementation in Python')
 
-    # Display GIF on the right column
-    with col1:
-        st.image('9.gif', use_column_width=True)  # Ensure '9.gif' is in the root folder and the correct filename
-
-    # Display project details on the left column
-    with col2:
-        st.markdown('[snake-game](https://github.com/anuragpras/snake-game)', unsafe_allow_html=True)
-        st.markdown('Classic snake game implemented in Python')
-        st.markdown('---')  # Horizontal line after the project
+    st.markdown('---')  # Horizontal line after the project
 
     # Contact section
     st.header('Contact')

@@ -28,6 +28,10 @@ def main():
         st.markdown('[Amazon India Sales Dashboard](https://github.com/anuragpras/amazon-india-sales-dashboard-tableau)')
         st.markdown('Interactive Tableau dashboard analyzing Amazon India\'s sales data')
 
+        st.subheader('COVID-19 Tableau Dashboard')
+        st.markdown('[COVID-19 Tableau Dashboard](https://github.com/anuragpras/covid19-tableau)')
+        st.markdown('Analyzing COVID-19 data using Tableau')
+
     # Second block of repositories
     with col2:
         st.subheader('Exploratory Data Analysis')
@@ -41,6 +45,14 @@ def main():
         st.subheader('Random Poetry Generator')
         st.markdown('[Random Poetry Generator](https://github.com/anuragpras/not-by-gulzar)')
         st.markdown('Capture Gulzar\'s essence with playful verses')
+
+        st.subheader('Pomodoro App')
+        st.markdown('[Pomodoro App](https://github.com/anuragpras/pomodoro-app)')
+        st.markdown('Simple Pomodoro timer app')
+
+        st.subheader('Snake Game')
+        st.markdown('[Snake Game](https://github.com/anuragpras/snake-game)')
+        st.markdown('Classic snake game implemented in Python')
 
     # Contact section
     st.header('Contact')

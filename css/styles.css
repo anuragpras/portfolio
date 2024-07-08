@@ -1,0 +1,45 @@
+
+### `styles.css`
+
+Create a file named `styles.css` in a directory named `css` (if not already created):
+
+```css
+/* Custom CSS styles for the Streamlit app */
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

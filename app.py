@@ -12,7 +12,7 @@ def main():
     st.header('Projects')
 
     # Two columns layout for projects
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
 
     # First block of repositories
     with col1:
@@ -41,8 +41,6 @@ def main():
         st.subheader('Random Poetry Generator')
         st.markdown('[Random Poetry Generator](https://github.com/anuragpras/not-by-gulzar)')
         st.markdown('Capture Gulzar\'s essence with playful verses')
-
-    # Additional repositories or customization can be added here
 
     # Contact section
     st.header('Contact')

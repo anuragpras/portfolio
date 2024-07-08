@@ -1,100 +1,52 @@
 import streamlit as st
 import requests
 
-# Page layout configuration
-st.set_page_config(
-    page_title="Anurag Prasad - Portfolio",
-    page_icon=":wave:",
-    layout="wide"
-)
-
-# Define CSS styles
-st.markdown(
-    """
-    <style>
-    .header {
-        font-size: 3rem;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    .section {
-        margin-top: 3rem;
-    }
-    .contact-info {
-        margin-top: 1rem;
-    }
-    .contact-item {
-        margin-bottom: 1rem;
-    }
-    .contact-item a {
-        display: inline-block;
-        margin-right: 1rem;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Function to fetch GitHub pinned repositories
-def fetch_github_pinned_repos(username):
-    url = f"https://gh-pinned-repos.egoist.dev/?username={username}"
+def fetch_github_pinned_repos():
+    url = 'https://api.github.com/users/anuragpras/repos?type=public&sort=pushed'
     response = requests.get(url)
     if response.status_code == 200:
-        return response.json()
+        repos = response.json()
+        pinned_repos = [repo for repo in repos if repo['pinned']]
+        return pinned_repos
     else:
-        return None
+        st.error('Failed to fetch GitHub repositories')
+        return []
 
-# Main content
-st.title("Anurag Prasad - Portfolio")
-st.header("About Me")
-st.write("CS Undergrad at VIT Bhopal, open to all technical roles.")
+# Main function to render the Streamlit app
+def main():
+    st.title('Anurag Prasad - Portfolio')
 
-st.header("Projects")
+    # About Me section
+    st.header('About Me')
+    st.write('CS Undergrad at VIT Bhopal, open to all technical roles.')
 
-# Replace 'anuragpras' with your GitHub username
-username = 'anuragpras'
-pinned_repos = fetch_github_pinned_repos(username)
+    # Projects section
+    st.header('Projects')
+    # Fetch GitHub pinned repositories
+    repos = fetch_github_pinned_repos()
+    if repos:
+        st.markdown('### GitHub Pinned Repositories')
+        for repo in repos:
+            st.markdown(f"[{repo['name']}]({repo['html_url']}) - {repo['description']}")
 
-if pinned_repos:
-    for repo in pinned_repos:
-        st.write(f"**{repo['repo']}**")
-        st.write(repo['description'])
-        st.write(f"[View on GitHub]({repo['link']})")
-        st.write("---")
-else:
-    st.error("Error fetching GitHub pinned repositories. Please check your GitHub username.")
+    # Contact section
+    st.header('Contact')
+    st.markdown('**Gmail**')
+    st.image('assets/gmail_icon.png', width=30)
+    st.markdown('[ianuragprasad@gmail.com](mailto:ianuragprasad@gmail.com)')
+    st.image('assets/gmail_icon.png', width=30)
+    st.markdown('[anurag.prasad@vitbhopal.ac.in](mailto:anurag.prasad@vitbhopal.ac.in)')
+    st.markdown('**LinkedIn**')
+    st.image('assets/linkedin_icon.png', width=30)
+    st.markdown('[LinkedIn](https://www.linkedin.com/your-linkedin-profile)')
+    st.markdown('**GitHub**')
+    st.image('assets/github_icon.png', width=30)
+    st.markdown('[GitHub](https://github.com/anuragpras)')
 
-st.header("Contact")
-st.markdown("""
-<div class="contact-info">
-    <div class="contact-item">
-        <a href="mailto:ianuragprasad@gmail.com">
-            <img src="images/gmail-icon.png" alt="Gmail" style="width: 20px; height: 20px; margin-bottom: -5px;">
-            ianuragprasad@gmail.com
-        </a>
-    </div>
-    <div class="contact-item">
-        <a href="mailto:anurag.prasad@vitbhopal.ac.in">
-            <img src="images/gmail-icon.png" alt="Gmail" style="width: 20px; height: 20px; margin-bottom: -5px;">
-            anurag.prasad@vitbhopal.ac.in
-        </a>
-    </div>
-    <div class="contact-item">
-        <a href="https://www.linkedin.com/in/anuragpras/" target="_blank">
-            <img src="images/linkedin-icon.png" alt="LinkedIn" style="width: 20px; height: 20px; margin-bottom: -5px;">
-            LinkedIn
-        </a>
-    </div>
-    <div class="contact-item">
-        <a href="https://github.com/anuragpras" target="_blank">
-            <img src="images/github-icon.png" alt="GitHub" style="width: 20px; height: 20px; margin-bottom: -5px;">
-            GitHub
-        </a>
-    </div>
-</div>
-""",
-unsafe_allow_html=True)
+    # Footer
+    st.markdown('---')
+    st.markdown("© 2024 Anurag Prasad")
 
-# Footer
-st.markdown("<hr>", unsafe_allow_html=True)
-st.markdown("&copy; 2024 Anurag Prasad", unsafe_allow_html=True)
+if __name__ == '__main__':
+    main()

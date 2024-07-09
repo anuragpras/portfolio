@@ -5,6 +5,9 @@ def main():
 
     st.title('Anurag Prasad - Portfolio')
 
+    # Navigation links
+    st.markdown('[Certifications](#certifications) | [Projects](#projects) | [Contact](#contact)')
+
     # About Me section
     st.header('About Me')
     st.write('Computer Science undergraduate at VIT Bhopal with a passion for AI/ML, data science, and software development. I\'m eager to learn and contribute my skills to innovative technical roles.')
@@ -20,9 +23,21 @@ def main():
     """
     st.markdown(education, unsafe_allow_html=True)
 
+    # Certifications section
+    st.header('Certifications')
+    certifications = """
+    <a name="certifications"></a>
+    | **Certification**                                              | **Score**     | **Certificate Link**                                                                                          |
+    |:---------------------------------------------------------------:|:-------------:|:------------------------------------------------------------------------------------------------------------:|
+    | AWS Certified Cloud Practitioner (CLF-C02)                      | 838/1000      | [Certificate](https://drive.google.com/file/d/1xPKoW9Bc9kh_a3ki2feQ0bGcjWo4I_zu/view?usp=drive_link)         |
+    | Microsoft Certified Azure Administrator (AZ-104)                | 836/1000      | [Certificate](https://drive.google.com/file/d/1F39DA3ledkMapL_AAGUfzsP3tqTL3Btt/view?usp=drive_link)         |
+    | Introduction to Internet of Things (NPTEL)                      | 90/100        | [Certificate](https://drive.google.com/file/d/111txAdF5ZiMuCYHVpi9MiKGR-PBP7NrE/view?usp=drive_link)         |
+    | The Bits & Bytes of Computer Networking (Coursera)              | 97.25/100     | [Certificate](https://drive.google.com/file/d/1YCTt65ZIZjKW6rCN2hhXjxNbgVBWVMx0/view?usp=drive_link)         |
+    """
+    st.markdown(certifications, unsafe_allow_html=True)
+
     # Projects section
     st.header('Projects')
-
     projects = [
         {"title": "Image Caption Generator", "link": "https://github.com/anuragpras/image-description-deep-learning", "description": "Image Caption Generator using Flickr dataset", "gif": "1.gif"},
         {"title": "Cafe Sales Analysis", "link": "https://github.com/anuragpras/cafe-sales-analysis", "description": "Detailed cafe sales analysis project using Power BI and MySQL", "gif": "2.gif"},
@@ -49,6 +64,7 @@ def main():
     # Contact section
     st.header('Contact')
     contact_info = """
+    <a name="contact"></a>
     <div style="display: flex; flex-direction: column; align-items: flex-start;">
         <div>Personal Mail ID:<br><a href="mailto:ianuragprasad@gmail.com">ianuragprasad@gmail.com</a></div>
         <div>University Mail ID:<br><a href="mailto:anurag.prasad@vitbhopal.ac.in">anurag.prasad@vitbhopal.ac.in</a></div>

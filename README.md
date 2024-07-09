@@ -1,6 +1,6 @@
 # Anurag Prasad Portfolio
 
-This repository contains Anurag Prasad's portfolio built using Streamlit, showcasing projects and contact information.
+This repository features a portfolio created with Streamlit, highlighting projects and contact details.
 
 ## Installation
 
@@ -9,3 +9,4 @@ This repository contains Anurag Prasad's portfolio built using Streamlit, showca
    ```bash
    git clone https://github.com/yourusername/streamlit-portfolio.git
    cd streamlit-portfolio
+

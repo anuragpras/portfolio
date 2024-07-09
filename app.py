@@ -29,19 +29,44 @@ def main():
     </table>
     """, unsafe_allow_html=True)
 
+    # Add custom CSS for responsive project layout
+    st.markdown("""
+    <style>
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .project-details {
+        flex: 4;
+        padding: 10px;
+    }
+    .project-gif {
+        flex: 1;
+        padding: 10px;
+    }
+    @media (max-width: 768px) {
+        .project-container {
+            flex-direction: column;
+        }
+        .project-gif {
+            order: -1;
+        }
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
     # Projects section
     st.header('Projects')
 
     # Function to display project details
     def display_project(title, link, description, gif):
         st.subheader(title)
-        col1, col2 = st.columns([4, 1])  # Adjust the ratio as needed
-        with col1:
-            st.markdown(f'[{link}](https://github.com/anuragpras/{link})', unsafe_allow_html=True)
-            st.markdown(description)
-            st.markdown('---')  # Horizontal line after the project
-        with col2:
-            st.image(gif, use_column_width=True)  # Ensure the GIF is in the correct folder and filename
+        st.markdown(f'<div class="project-container">', unsafe_allow_html=True)
+        st.markdown(f'<div class="project-details"><a href="https://github.com/anuragpras/{link}" target="_blank">{link}</a><br>{description}<br>---</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="project-gif"><img src="{gif}" width="100%"></div>', unsafe_allow_html=True)
+        st.markdown('</div>', unsafe_allow_html=True)
 
     # List of projects
     projects = [

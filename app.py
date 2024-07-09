@@ -5,28 +5,10 @@ def main():
 
     st.title('Anurag Prasad - Portfolio')
 
-    # Styling for navigation links
-    st.markdown(
-        """
-        <style>
-            .nav-link {
-                font-size: 18px;
-                margin-right: 20px;
-                text-decoration: none;
-                color: #3366ff;
-            }
-            .nav-link:hover {
-                text-decoration: underline;
-            }
-        </style>
-        """
-        , unsafe_allow_html=True
-    )
-
     # Navigation links
     st.markdown(
         """
-        [Certifications](#certifications) | [Projects](#projects) | [Contact](#contact)
+        [**Certifications**](#certifications) | [**Projects**](#projects) | [**Contact**](#contact)
         """
         , unsafe_allow_html=True
     )
@@ -45,6 +27,16 @@ def main():
     | Class X                              | Holy Family Convent Sr. Sec. School, Bhopal        | 2018          |
     """
     st.markdown(education, unsafe_allow_html=True)
+
+    # Certifications section
+    st.header('Certifications')
+    certifications = """
+    - [AWS Certified Cloud Practitioner (CLF-C02)](https://drive.google.com/file/d/1xPKoW9Bc9kh_a3ki2feQ0bGcjWo4I_zu/view?usp=drive_link)
+    - [Microsoft Certified Azure Administrator (AZ-104)](https://drive.google.com/file/d/1F39DA3ledkMapL_AAGUfzsP3tqTL3Btt/view?usp=drive_link)
+    - [Introduction to Internet of Things (NPTEL)](https://drive.google.com/file/d/111txAdF5ZiMuCYHVpi9MiKGR-PBP7NrE/view?usp=drive_link)
+    - [The Bits & Bytes of Computer Networking (Coursera)](https://drive.google.com/file/d/1YCTt65ZIZjKW6rCN2hhXjxNbgVBWVMx0/view?usp=drive_link)
+    """
+    st.markdown(certifications, unsafe_allow_html=True)
 
     # Projects section
     st.header('Projects')

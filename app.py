@@ -7,7 +7,7 @@ def main():
 
     # About Me section
     st.header('About Me')
-    st.write('CS Undergrad at VIT Bhopal, open to all technical roles.')
+    st.write('Computer Science undergrad at Vellore Institute of Technology Bhopal with a passion for AI/ML, data science, and software development. I'm eager to learn and contribute my skills to innovative technical roles.')
 
     # Education section
     st.header('Education')

@@ -9,12 +9,25 @@ def main():
 
     # Education section
     st.header('Education')
-    education_data = {
-        ' ': ['B.Tech, Computer Science', 'Class XII', 'Class X'],
-        'Institute': ['Vellore Institute of Technology, Bhopal', 'Rukhmani Devi Public School, Bhopal', 'Holy Family Convent Sr. Sec. School, Bhopal'],
-        'Year': ['2021-2025', '2020', '2018']
-    }
-    st.table(education_data)
+    st.markdown("""
+    <table style="width:100%">
+      <tr>
+        <td>B.Tech, Computer Science</td>
+        <td>Vellore Institute of Technology, Bhopal</td>
+        <td>2021-2025</td>
+      </tr>
+      <tr>
+        <td>Class XII</td>
+        <td>Rukhmani Devi Public School, Bhopal</td>
+        <td>2020</td>
+      </tr>
+      <tr>
+        <td>Class X</td>
+        <td>Holy Family Convent Sr. Sec. School, Bhopal</td>
+        <td>2018</td>
+      </tr>
+    </table>
+    """, unsafe_allow_html=True)
 
     # Projects section
     st.header('Projects')

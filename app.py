@@ -31,8 +31,8 @@ def main():
         {"title": "Pizza Sales Analysis", "link": "https://github.com/anuragpras/pizza-sales-analysis", "description": "Analyzing pizza sales data using MySQL and Excel", "gif": "5.gif"},
         {"title": "Not By Gulzar (Random Poetry Generator)", "link": "https://github.com/anuragpras/not-by-gulzar", "description": "Capture Gulzar's essence with the Random Poetry Generator", "gif": "6.gif"},
         {"title": "COVID-19 Dashboard (Tableau)", "link": "https://github.com/anuragpras/covid19-tableau", "description": "Interactive Tableau dashboard tracking COVID-19 statistics", "gif": "7.gif"},
-        {"title": "Pomodoro Timer App", "link": "https://github.com/anuragpras/pomodoro-app", "description": "Productivity tool for time management using Python", "gif": "8.gif"},
-        {"title": "Snake Game", "link": "https://github.com/anuragpras/snake-game", "description": "Classic snake game implementation in Python", "gif": "9.gif"},
+        {"title": "Pomodoro Timer App (Streamlit)", "link": "https://github.com/anuragpras/pomodoro-app", "description": "Productivity tool for time management using Python and Streamlit", "gif": "8.gif"},
+        {"title": "Snake Game (Raylib and C++)", "link": "https://github.com/anuragpras/snake-game", "description": "Classic snake game implementation using Raylib library and C++", "gif": "9.gif"},
         {"title": "Task Manager MERN App", "link": "https://github.com/anuragpras/Task-Manager-MERN", "description": "Full-stack MERN application for managing tasks", "gif": "10.gif"},
     ]
 

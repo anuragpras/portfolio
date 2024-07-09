@@ -33,6 +33,7 @@ def main():
         {"title": "COVID-19 Dashboard (Tableau)", "link": "https://github.com/anuragpras/covid19-tableau", "description": "Interactive Tableau dashboard tracking COVID-19 statistics", "gif": "7.gif"},
         {"title": "Pomodoro Timer App", "link": "https://github.com/anuragpras/pomodoro-app", "description": "Productivity tool for time management using Python", "gif": "8.gif"},
         {"title": "Snake Game", "link": "https://github.com/anuragpras/snake-game", "description": "Classic snake game implementation in Python", "gif": "9.gif"},
+        {"title": "Task Manager MERN App", "link": "https://github.com/anuragpras/Task-Manager-MERN", "description": "Full-stack MERN application for managing tasks", "gif": "10.gif"},
     ]
 
     for project in projects:

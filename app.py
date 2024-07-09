@@ -30,11 +30,14 @@ def main():
 
     # Certifications section
     st.header('Certifications')
+
     certifications = """
-    - [AWS Certified Cloud Practitioner (CLF-C02)](https://drive.google.com/file/d/1xPKoW9Bc9kh_a3ki2feQ0bGcjWo4I_zu/view?usp=drive_link)
-    - [Microsoft Certified Azure Administrator (AZ-104)](https://drive.google.com/file/d/1F39DA3ledkMapL_AAGUfzsP3tqTL3Btt/view?usp=drive_link)
-    - [Introduction to Internet of Things (NPTEL)](https://drive.google.com/file/d/111txAdF5ZiMuCYHVpi9MiKGR-PBP7NrE/view?usp=drive_link)
-    - [The Bits & Bytes of Computer Networking (Coursera)](https://drive.google.com/file/d/1YCTt65ZIZjKW6rCN2hhXjxNbgVBWVMx0/view?usp=drive_link)
+    | **Certification**                                    | **Score** | **Link**                                                                                     |
+    |:-----------------------------------------------------:|:---------:|:---------------------------------------------------------------------------------------------:|
+    | AWS Certified Cloud Practitioner (CLF-C02)            | 838/1000  | [View Certificate](https://drive.google.com/file/d/1xPKoW9Bc9kh_a3ki2feQ0bGcjWo4I_zu/view?usp=drive_link)         |
+    | Microsoft Certified Azure Administrator (AZ-104)      | 836/1000  | [View Certificate](https://drive.google.com/file/d/1F39DA3ledkMapL_AAGUfzsP3tqTL3Btt/view?usp=drive_link)         |
+    | Introduction to Internet of Things (NPTEL)            | 90/100    | [View Certificate](https://drive.google.com/file/d/111txAdF5ZiMuCYHVpi9MiKGR-PBP7NrE/view?usp=drive_link)          |
+    | The Bits & Bytes of Computer Networking (Coursera)    | 97.25/100 | [View Certificate](https://drive.google.com/file/d/1YCTt65ZIZjKW6rCN2hhXjxNbgVBWVMx0/view?usp=drive_link)        |
     """
     st.markdown(certifications, unsafe_allow_html=True)
 
